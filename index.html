@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Розгалужений обчислювальний процес</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        label, input {
+            display: block;
+            margin: 10px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h2>Розгалужений обчислювальний процес</h2>
+    <label for="xMin">Мінімальне значення x:</label>
+    <input type="number" id="xMin" step="0.1">
+    <label for="xMax">Максимальне значення x:</label>
+    <input type="number" id="xMax" step="0.1">
+    <label for="step">Крок зміни значень x:</label>
+    <input type="number" id="step" step="0.1">
+    <button onclick="calculate()">Обчислити</button>
+
+    <table id="resultsTable">
+        <thead>
+            <tr>
+                <th>x</th>
+                <th>U(x)</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
